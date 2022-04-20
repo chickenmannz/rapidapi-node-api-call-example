@@ -18,6 +18,14 @@
     <div class="main-content container-fluid">
         <div class="row justify-content-center align-items-center">
             <div class="col-sm-5">
+                    <p>Extract a weeks airline schedules from FlightAware</br>
+                    Week starts from 00:00 UTC on the UTC date selected in the field below </br>
+                    Use the 3 digit ICAO code for airlines (i.e. ANZ not NZ, BAW not BA) </br>
+                    WARNING!!! Once you press go you are liable for all costs on FlightAware. </br>
+                    To minimise results code share records have been disabled and only one week is downloaded. </br>
+                    For example Air NZ generates ~4000 individual flights. On current FlightAware pricing a page is 15 results, and a page is USD$0.02</br>
+                    So Air NZ weekly rosters would be ~USD$5.33 per execution.
+                    </p>
                 <form id="info">
                     <fieldset>
                         <legend>Airline Schedule Information</legend>
@@ -26,7 +34,7 @@
                             <input class="form-control" id="icao-code" type="text" placeholder="ICAO Code" aria-placeholder="ICAO Code">
                         </div>
                         <div class="form-group">
-                            <label for="start-schedule">First Day of Weeks Schedule</label>
+                            <label for="start-schedule">First Day of Weeks Schedule (UTC)</label>
                             <input class="form-control" id="start-schedule" type="date">
                         </div>
                         <div class="form-group">
@@ -38,10 +46,10 @@
                 </form>
             </div>
             <div class="col-sm-6">
-                <h2>COMPATIBILITY:</h2>
+                <h2>Download JSON:</h2>
                 <p class="message-1 lead"></p>
 
-                <h2>YODA COMMENTS:</h2>
+                <h2>Download CSV:</h2>
                 <blockquote class="message-2"></blockquote>
             </div>
         </div>
